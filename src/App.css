@@ -17,9 +17,11 @@
   min-width: 100px;
   margin-top: 20px;
 }
-.App .App-wrap {
+.App .container {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  max-width: 750px;
+  max-width: 900px;
   margin: 0 auto;
   background-color: #fcfbfe;
+  border-radius: 20px;
+  padding: 30px;
 }
