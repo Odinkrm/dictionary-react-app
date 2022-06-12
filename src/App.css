@@ -11,17 +11,29 @@
 .App-header {
   padding: 30px;
 }
-.App .App-header .App-logo {
+.App-header .App-logo {
   display: block;
   max-width: 200px;
   min-width: 100px;
   margin-top: 20px;
 }
-.App .container {
+.App .dictionary-wrap {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   max-width: 900px;
   margin: 0 auto;
   background-color: #fcfbfe;
   border-radius: 20px;
   padding: 30px;
+}
+ul {
+  list-style: square;
+}
+.synonyms-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.synonyms-list li {
+  padding-right: 10px;
+  display: inline-block;
 }
