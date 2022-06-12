@@ -6,7 +6,7 @@ export default function DictionaryResult(props) {
   if (props.results) {
     return (
       <div className="dictionary-content">
-        <h1>{props.results.word}</h1>
+        <h2>{props.results.word}</h2>
         <span>{props.results.phonetic}</span>
         {props.results.meanings.map(function (meaning, index) {
           return (
