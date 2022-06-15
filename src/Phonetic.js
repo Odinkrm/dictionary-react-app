@@ -8,10 +8,10 @@ export default function Phonetic(props) {
   }
   if (props.phonetic.audio) {
     return (
-      <div>
+      <div className="Phonetic">
         <a href="/" onClick={playAudio}>
           <i class="fa-solid fa-circle-play"></i>
-        </a>
+        </a>{" "}
         <span>{props.phonetic.text}</span>
       </div>
     );

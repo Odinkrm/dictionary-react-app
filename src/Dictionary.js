@@ -19,7 +19,7 @@ export default function Dictionary() {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
-    let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
+    let pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
     let pexelsApiKey =
       "563492ad6f9170000100000128c3f9e9738f404fad1e850de3b10e74";
     axios
@@ -33,17 +33,24 @@ export default function Dictionary() {
   }
   return (
     <div className="Dictionary">
-      <form className="text-center mb-5" onSubmit={search}>
-        <input
-          type="search"
-          placeholder="Search for a word"
-          autoFocus={true}
-          onChange={handleKeywordChange}
-        ></input>
-        <button type="submit" value="Search">
-          Search
-        </button>
-      </form>
+      <div className="dictionary-wrapper d-flex flex-column">
+        <h1 className="text-center mt-4 mb-4">
+          What word do you want to look up?
+        </h1>
+        <div className="d-flex justify-content-center mb-4">
+          <form onSubmit={search}>
+            <input
+              type="search"
+              placeholder="Search for a word"
+              autoFocus={true}
+              onChange={handleKeywordChange}
+            ></input>
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass" />
+            </button>
+          </form>
+        </div>
+      </div>
       <DictionaryResult results={dictionaryApiResult} />
       <Image images={dictionaryImages} />
     </div>

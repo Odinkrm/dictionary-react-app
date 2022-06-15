@@ -1,15 +1,27 @@
+h1,
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 26px;
+}
+ul li,
+h4 {
+  font: 20px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  list-style: square;
+}
 .App {
   min-height: 100vh;
-  background: rgb(213, 177, 247);
-  background: linear-gradient(
-    140deg,
-    rgba(213, 177, 247, 1) 0%,
-    rgba(232, 232, 251, 1) 50%,
-    rgba(179, 230, 232, 1) 100%
-  );
+  background: linear-gradient(140deg, #d5b1f7 0%, #e8e8fb 50%, #b3e6e8 100%);
 }
 .App-header {
-  padding: 30px;
+  padding-top: 30px;
 }
 .App-header .App-logo {
   display: block;
@@ -17,23 +29,47 @@
   min-width: 100px;
   margin-top: 20px;
 }
-.App .dictionary-wrap {
+.dictionary-wrapper {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 50px auto;
   background-color: #fcfbfe;
   border-radius: 20px;
   padding: 30px;
 }
-ul {
-  list-style: square;
+.Dictionary form {
+  position: relative;
+}
+.Dictionary form input {
+  border: 2px solid #c186f9;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.Dictionary form input:focus {
+  outline: none;
+}
+.Dictionary form button {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  color: #c186f9;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 18px;
+}
+.Phonetic a {
+  color: #c186f9;
 }
 .synonyms-list {
-  list-style: none;
+  list-style: dashed;
   margin: 0;
   padding: 0;
 }
 .synonyms-list li {
   padding-right: 10px;
   display: inline-block;
+}
+.Image img {
+  border-radius: 5px;
 }

@@ -5,8 +5,8 @@ import "./App.css";
 
 export default function Meaning(props) {
   return (
-    <div className="Meaning">
-      <h3>
+    <div className="Meaning dictionary-wrapper">
+      <h3 className="mb-4">
         <em>{props.meaning.partOfSpeech}</em>
       </h3>
       {props.meaning.definitions.map(function (definition, index) {

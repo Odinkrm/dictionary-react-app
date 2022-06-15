@@ -9,12 +9,7 @@ export default function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <div className=" dictionary-wrap">
-          <h1 className="text-center mt-4 mb-4">
-            What word are you looking for?
-          </h1>
-          <Dictionary />
-        </div>
+        <Dictionary />
       </div>
       <footer className="text-center text-muted mt-2 mb-2">
         This project was coded by Asal Karimi and is open-sourced on{" "}
